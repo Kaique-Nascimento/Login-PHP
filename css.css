@@ -1,0 +1,19 @@
+body {
+  background: url("img/fundo.jpg");
+  background-size: cover;
+  color: #fff;
+}
+
+.centro {
+  display: grid;
+  place-items: center;
+  margin: 20px 0px;
+}
+
+#espaco {
+  margin: 100px 10px;
+}
+
+a {
+  color: purple;
+}

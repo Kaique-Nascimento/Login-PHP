@@ -1,0 +1,19 @@
+$fundo: url('img/fundo.jpg');
+$branco: #fff;
+
+body{
+    background: $fundo;
+    background-size: cover;
+    color: $branco;
+}
+.centro{
+    display: grid;
+    place-items: center;
+    margin: 20px 0px; 
+}
+#espaco{
+    margin: 100px 10px;
+}
+a{
+    color: purple;
+}
