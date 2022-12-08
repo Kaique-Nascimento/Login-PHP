@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+$fonte: 'Open Sans', sans-serif;
 $fundo: url('img/fundo.jpg');
 $branco: #fff;
+$preto: #000;
+$transicao: all 0.5s ease;
 
 body{
     background: $fundo;
     background-size: cover;
     color: $branco;
+    font-family: $fonte;
 }
 .centro{
     display: grid;
@@ -12,8 +17,42 @@ body{
     margin: 20px 0px; 
 }
 #espaco{
-    margin: 100px 10px;
+    margin: 10px 10px;
 }
 a{
     color: purple;
+}
+.quadro{
+    background: rgba( 0, 0, 0, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9px );
+    -webkit-backdrop-filter: blur( 9px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin: 100px 100px 0 100px;
+    border-radius: 50px;
+}
+input[type="submit"]{
+    background-color: $preto;
+    color: $branco;
+    transition: $transicao;
+    border-radius: 20px;
+    padding: 20px 30px;
+}
+input[type="text"], input[type="password"]{
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
+    color: $preto;
+    transition: $transicao;
+    
+}
+input[type="text"]:hover, input[type="password"]:hover{
+    background-color: #a9a9;
+    color: $branco;
+    
+}
+input[type="submit"]:hover{
+    background-color: $branco;
+    color: $preto;
+    cursor: pointer;
 }

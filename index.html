@@ -8,18 +8,25 @@
     <title>Login</title>
 </head>
 <body>
-    <div class="centro">
+    <div class="centro quadro">
 <h1> Login </h1>
 <form action="cadastrado.php" method="post">
-    <label>Login:</label><input type="text" name="login" id="login" required><br>
-<label>Senha:</label><input type="password" name="senha" id="senha" required><br>
+
+    <label>Login:</label><br><input type="text" name="login" id="login" required><br><br>
+<label>Senha:</label><br><input type="password" name="senha" id="senha" required><br>
 <center>
-<input type="submit" value="Cadastrar" id="cadastrar" name="cadastrar">
+    <br>
+<input type="submit" value="Login" id="login" name="login">
 </center>
 </form> 
 <div id="espaco">
     <p> Esqueceu sua senha? 
         <a href="troca.php">Aperte aqui</a>
+    </p>
+</div>
+<div id="espaco">
+    <p> Não tem cadastro? 
+        <a href="cadastro.php">Aperte aqui</a>
     </p>
 </div>
     </div>
