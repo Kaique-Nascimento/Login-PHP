@@ -1,0 +1,9 @@
+1 - fazer tela de cadastro;
+2 - pegar valores;
+3 - fazer insert e ver se nao existe;
+4 - fazer tela de esqueceu senha;
+5 - pegar com email;
+6 - enviar o email pra trocar de senha;
+7 - aprender firebase pra trocar direto da nuvem a senha;
+8 - aprender json;
+9 - terminar o projeto.
