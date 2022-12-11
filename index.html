@@ -10,25 +10,34 @@
 <body>
     <div class="centro quadro">
 <h1> Login </h1>
-<form action="cadastrado.php" method="post">
+<form action="cadastrado.html" method="post">
 
     <label>Login:</label><br><input type="text" name="login" id="login" required><br><br>
 <label>Senha:</label><br><input type="password" name="senha" id="senha" required><br>
 <center>
     <br>
-<input type="submit" value="Login" id="login" name="login">
+<input type="submit" value="enviar" id="enviar" name="enviar">
 </center>
 </form> 
 <div id="espaco">
     <p> Esqueceu sua senha? 
-        <a href="troca.php">Aperte aqui</a>
+        <a href="troca.html">Aperte aqui</a>
     </p>
 </div>
 <div id="espaco">
     <p> Não tem cadastro? 
-        <a href="cadastro.php">Aperte aqui</a>
+        <a href="cadastro.html">Aperte aqui</a>
     </p>
 </div>
     </div>
+    <script>
+    let enviado = document.getElementById("enviar");
+    enviado.addEventListener("click", function() { 
+    var login = document.getElementById('login');
+    var senha = document.getElementById('senha');
+    if(senha != "oi" && login != "oi") alert("errado")
+    else alert("Liberado")
+});
+    </script>
 </body>
 </html>
